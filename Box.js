@@ -39,7 +39,6 @@ export default class Box extends React.Component {
   
     render() {
         // console.log(this.props)
-        console.log("hello")
       /*
           Note the two layers of DropTarget. 
           This enables it to handle dropped items from 
@@ -49,24 +48,33 @@ export default class Box extends React.Component {
         <div className="component_box">
             <DropTarget
               onHit={this.handleDrop}
-              targetKey={this.props.targetKey}
-              dropData={{name: this.props.name}}
+              targetKey="box"
+              dropData={{data: this.state.items[0]}}
             >
               <DropTarget
                 onHit={this.handleDrop}
-                targetKey="boxItem"
-                dropData={{name: this.props.name}}
+                targetKey="box1"
+                dropData={{data: this.state.items[0]}}
               >
+                <DropTarget
+                onHit={this.handleDrop}
+                targetKey="box2"
+                dropData={{data: this.state.items[0]}}
+              >
+
+
                 <div className="box">
                   {this.state.items.map((item, index) => {
                     return (
                       <BoxItem key={item.uid} divId={this.props.divId} uid={item.uid} kill={this.kill} index={index} swap={this.swap}>
                         {item.label}
+                        {this.props.jsonData.length !== 0 ? this.props.jsonData[0].name : ''}
                       </BoxItem>
                     )
                   })}
                 </div>
               </DropTarget>
+            </DropTarget>
             </DropTarget>
         </div>
       );

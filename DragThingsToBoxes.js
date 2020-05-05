@@ -36,6 +36,24 @@ export default class DragThingsToBoxes extends React.Component {
     )
   }
 
+  fetchDataFromChild2(data) {
+    console.log(data);
+    this.setState(
+      {
+        jsonData: data
+      }
+    )
+  }
+
+  fetchDataFromChild3(data) {
+    console.log(data);
+    this.setState(
+      {
+        jsonData: data
+      }
+    )
+  }
+
   displayData(data) {
     return data.map((data) => {
       return (
@@ -62,14 +80,15 @@ export default class DragThingsToBoxes extends React.Component {
         <div className="drag_things_to_boxes">
           <div className="things_to_drag">
             <Boxable targetKey="box" divId="dataamount" label="Data Amount"  bgcolor="danger" title="Data Amount" returnData={(data) => this.fetchDataFromChild(data)} />
-            <Boxable targetKey="box" divId="users" label="Users"  bgcolor="warning" title="Users" returnData={(data) => this.fetchDataFromChild(data)}/>
-            <Boxable targetKey="box" divId="datasets" label="Data Sets"  bgcolor="success" title="Data Sets" returnData={(data) => this.fetchDataFromChild(data)}/>
+            <Boxable targetKey="box1" divId="users" label="Users"  bgcolor="warning" title="Users" returnData={(data) => this.fetchDataFromChild2(data)}/>
+            <Boxable targetKey="box2" divId="datasets" label="Data Sets"  bgcolor="success" title="Data Sets" returnData={(data) => this.fetchDataFromChild3(data)}/>
           </div>
           <div className="boxes">
-            <Box targetKey="box"/>
-            {/* <Box targetKey="box"/> */}
+            <Box targetKey="box" jsonData={this.state.jsonData}/>
+            <Box targetKey="box1" jsonData={this.state.jsonData}/>
+            <Box targetKey="box2" jsonData={this.state.jsonData}/>
           </div>
-          { this.state.jsonData.length === 0 ? [] : this.displayData(this.state.jsonData) }
+          {/* { this.state.jsonData.length === 0 ? [] : this.displayData(this.state.jsonData) } */}
         </div>
       )
     }
