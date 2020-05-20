@@ -1,1 +1,5 @@
 Ziehen Sie per Drag & Drop Funktion die entsprechenden Widgets auf das Dashboard.
+
+Speichern und schließen
+
+Mein Dashboard
