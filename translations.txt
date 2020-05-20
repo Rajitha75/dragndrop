@@ -3,3 +3,7 @@ Ziehen Sie per Drag & Drop Funktion die entsprechenden Widgets auf das Dashboard
 Speichern und schließen
 
 Mein Dashboard
+
+Fügen Sie neue Widgets per Drag & Drop Funktion zu Ihrem Dashboard hinzu. Nutzen Sie hierfür die Liste auf der linken Seite.
+
+Datenvolumen
