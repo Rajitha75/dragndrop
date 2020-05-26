@@ -65,7 +65,7 @@
 			"CRT_MIDDLE_NAME": "Kumar",
 			"CRT_LAST_NAME": "xyz",
 			"CRT_EMAIL": "abc@gmail.com",
-			"CRT_POSITION_ID": "Consultant"
+			"CRT_POSITION_ID": "Consultant",
 			"CRT_ENTITY": "Entity 1",
 			"CRT_DEPARTMENT": "Department 1",
 			"CRT_ALIAS": "abc xyz",
@@ -78,10 +78,10 @@
 			"CRT_MIDDLE_NAME": "Kumar",
 			"CRT_LAST_NAME": "mnc",
 			"CRT_EMAIL": "pqr@gmail.com",
-			"CRT_POSITION_ID": "Consultant"
+			"CRT_POSITION_ID": "Consultant",
 			"CRT_ENTITY": "Entity 2",
 			"CRT_DEPARTMENT": "Department 2",
-			CRT_ALIAS: "pqr mnc",
+			"CRT_ALIAS": "pqr mnc",
 			"CRT_NOTES": null,
 			"CRT_CLASSIFICATION_ID": "Critial",
 			"CRT_TYPE_ID": 1
@@ -91,10 +91,10 @@
 			"CRT_MIDDLE_NAME": "Kumar",
 			"CRT_LAST_NAME": "name",
 			"CRT_EMAIL": "sample@gmail.com",
-			"CRT_POSITION_ID": "Consultant"
+			"CRT_POSITION_ID": "Consultant",
 			"CRT_ENTITY": "Entity 3",
 			"CRT_DEPARTMENT": "Department 3",
-			CRT_ALIAS: "sample name",
+			"CRT_ALIAS": "sample name",
 			"CRT_NOTES": null,
 			"CRT_CLASSIFICATION_ID": "Critial",
 			"CRT_TYPE_ID": 1
